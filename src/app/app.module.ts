@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InscriptionComponent } from './incription/inscription/inscription.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InscriptionComponent
   ],
   imports: [
+    
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
